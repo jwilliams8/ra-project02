@@ -28,11 +28,22 @@
            $(".options").html(output);
 
        
+     $(function() {
+        $(window).scroll(function() {
+          if($(window).scrollTop() >= 100) {
+            $('nav').addClass('scrolled');
+          } else {
+            $('nav').removeClass('scrolled');
+          }
+        });
+      });
 
         // AJAX call based on user selection
       var successFn = function(data){
-        var html = "";
          $('.options').on('change', function(){
+            $('header').addClass('padding-tb-md');
+            $('#logo').addClass('reduced-logo-height');
+
                $.ajax({
                   url:'https://api.nytimes.com/svc/topstories/v2/' + this.value.toLowerCase() + '.json', 
                   type: 'GET',
@@ -47,7 +58,7 @@
             var dynamicCategory = function(data){
             var html = "";
             var i = 0;
-            
+
            while (i < 12) {
            if (data.results[i].multimedia.length > 0) {
               html += "<div class='top-story' style='background: url(" + data.results[i].multimedia[data.results[i].multimedia.length-1].url + ") center center / cover no-repeat;'>";
