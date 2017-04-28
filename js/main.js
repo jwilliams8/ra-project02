@@ -49,7 +49,7 @@ var dynamicCategory = function(data){
 // AJAX call based on user selection
 var onReadyFn = function(data){
   $('.options').on('change', function(){
-    $("#loading").addTemporaryClass("loading", 3000);
+    $("#loading").addTemporaryClass("loading", 2000);
     $('nav').addClass('nav-post-select');
     $('#logo').addClass('reduced-logo-height');
     $.ajax({

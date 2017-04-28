@@ -92,20 +92,6 @@ footer {
 	}
 }
 
-a {
-	.text-section {
-		opacity: 0;
-		transition: $transition-regular;
-	}
-}
-
-a:hover {
-	.text-section {
-		opacity: 100;
-		transition: $transition-regular;
-	}
-}
-
 /* classes add or included in JS */
 .padding-sm {
 	padding: 0.5em;
@@ -183,5 +169,19 @@ a:hover {
 
 	#logo {
 		padding: 1rem 4rem;
+	}
+
+	a {
+		.text-section {
+			opacity: 0;
+			transition: $transition-regular;
+		}
+	}
+
+	a:hover {
+		.text-section {
+			opacity: 100;
+			transition: $transition-regular;
+		}
 	}
 }
