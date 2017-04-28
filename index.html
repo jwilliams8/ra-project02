@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>NY Times</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-<body>
- <header class="flex flex-column padding-tb-lrg">
- <img src="images/nyt-logo.svg" id="logo" class="full-logo-height">
- <div class="category-select">
- <p class="padding-tb-sm">Choose a section:</p>
- <select class="options">
-</select>
-</div>
-</header>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>NY Times</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+   </head>
+   <body>
+<div id="loading">
+      </div>
 
-<div id="articles" class="flex flex-wrap">
-</div>
+      <nav class="flex flex-column flex-row-td justify-flex-start-desktop">
+         <img src="images/nyt-logo.svg" id="logo" class="full-logo-height padding-lr-md-desktop">
+         <div class="category-select">
+            <p class="padding-tb-sm">Choose a section:</p>
+            <select class="options">   
+            </select>
+         </div>
+      </nav>
+    
+      
+      <section>
+         <div id="articles" class="flex flex-wrap">
+         </div>
+      </section>
 
-<footer>
-<p class="font-grey">&copy; Copyright 2016 INSTANEWS</p>
-</footer>
- <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
- </script>
- <script type="text/javascript" src="js/main.js"></script>
-</body>
+      <footer class="justify-flex-start-desktop">
+         <p class="font-grey text-align-left-desktop">&copy; Copyright 2016 INSTANEWS</p>
+      </footer>
+
+      <script
+         src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous">
+      </script>
+      <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+   </body>
 </html>
