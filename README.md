@@ -11,3 +11,6 @@ April 27, 2017
 - Refined header layout and transitioning when swithing between an option selection and the load of articles
 - Created media queries for tablet and desktop to update article layout and header positioning.
 - Added loading screen with a gif when a category is selected and loading
+- Refactored scss to incorporate nesting and variables
+
+A working version of this project can be viewed at - https://jwilliams8.github.io/ra-project02/
