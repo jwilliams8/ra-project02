@@ -36,7 +36,7 @@ var dynamicCategory = function(data){
     if (data.results[index].multimedia.length > 0) {
       html += "<a href='" + data.results[index].url + "' target='_blank' class='top-story' style='background: url(" + data.results[index].multimedia[data.results[index].multimedia.length-1].url + ") center center / cover no-repeat;'>";
       html += "<div class='text-section'>";
-      html += "<p class='fade text-decoration-none padding-sm'>" + data.results[index].abstract + "</p>";
+      html += "<p class='text-decoration-none padding-sm'>" + data.results[index].abstract + "</p>";
       html += "</div>";
       html += "</div>";
       html += "</a>";

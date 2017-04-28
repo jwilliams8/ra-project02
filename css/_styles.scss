@@ -73,9 +73,11 @@ footer {
 .flex {
 	display: flex;
 }
+
 .flex-wrap {
 	flex-wrap: wrap;
 }
+
 .flex-column {
 	flex-direction: column;
 }
@@ -87,6 +89,20 @@ footer {
 
 	p {
 		padding: 1rem 0;
+	}
+}
+
+a {
+	.text-section {
+		opacity: 0;
+		transition: $transition-regular;
+	}
+}
+
+a:hover {
+	.text-section {
+		opacity: 100;
+		transition: $transition-regular;
 	}
 }
 

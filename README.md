@@ -13,4 +13,7 @@ April 27, 2017
 - Added loading screen with a gif when a category is selected and loading
 - Refactored scss to incorporate nesting and variables
 
+April 28, 2017
+- Added hover functionality for abstract text
+
 A working version of this project can be viewed at - https://jwilliams8.github.io/ra-project02/
