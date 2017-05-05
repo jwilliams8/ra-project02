@@ -13,7 +13,7 @@ var selectMenu = {
 
 // Function to add/remove class with duration
 (function($){
-  $.fn.extend({ 
+  $.fn.extend({
     addTemporaryClass: function(className, duration) {
       var elements = this;
       setTimeout(function() {
@@ -24,10 +24,10 @@ var selectMenu = {
     });
   }
 });
-})(jQuery);  
+})(jQuery);
 
 selectMenu.buildMenu();
-          
+
 // HTML injection based on AJAX call and selection
 var dynamicCategory = function(data){
   var html = "";
@@ -44,7 +44,7 @@ var dynamicCategory = function(data){
       i++;
     };
   };
-}; 
+};
 
 // AJAX call based on user selection
 var onReadyFn = function(data){
@@ -53,7 +53,7 @@ var onReadyFn = function(data){
     $('nav').addClass('nav-post-select');
     $('#logo').addClass('reduced-logo-height');
     $.ajax({
-      url:'https://api.nytimes.com/svc/topstories/v2/' + this.value.toLowerCase() + '.json', 
+      url:'https://api.nytimes.com/svc/topstories/v2/' + this.value.toLowerCase() + '.json',
       type: 'GET',
       data: {'api-key' : '86b2cab13dff42ca9d5445b89b6e8ab6'},
     }).done(dynamicCategory, function() {
@@ -62,5 +62,5 @@ var onReadyFn = function(data){
     });
   });
 };
-         
+
 $(document).ready(onReadyFn);

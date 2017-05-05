@@ -3,6 +3,7 @@ var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat')
 var rename = require('gulp-rename');
+var watch = require('gulp-watch');
 
 
 
@@ -17,4 +18,9 @@ gulp.task("sass", function(){
 	.pipe(rename("styles.min.css"))
 	.pipe(cleanCSS())
 	.pipe(gulp.dest("./css"))
+});
+
+
+gulp.task('watch', function(){
+    gulp.watch('./css/*.scss', ['sass']);
 });
