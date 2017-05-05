@@ -16,13 +16,10 @@ a {
 
 p {
 	line-height: 20px;
-	color: #fff;
+	color: $primary-color;
 }
 
 nav {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 90vh;
 
 	img {
@@ -33,10 +30,6 @@ nav {
 
 footer {
 	height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	p {
 		color: #c2c2c2
 	}
@@ -81,9 +74,11 @@ footer {
 .flex-column {
 	flex-direction: column;
 }
-
+.justify-align-center{
+	justify-content: center;
+	align-items: center;
+}
 .category-select {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 
@@ -167,7 +162,7 @@ footer {
 		justify-content: flex-start;
 	}
 
-	#logo {
+	.logo {
 		padding: 1rem 4rem;
 	}
 
