@@ -134,7 +134,7 @@ footer {
 		width: 33.33%;
 		height: 60vh;
 		transition: $transition-regular;
-	}
+	 }
 
 	.flex-row-td {
 		flex-direction: row;
@@ -151,7 +151,7 @@ footer {
 		height: 20vh;
 		transition: $transition-regular;
 		min-height: 180px;
-	}
+	 }
 
 }
 @media only screen and (min-device-width:1000px) and (min-width:1000px) {
@@ -184,4 +184,6 @@ footer {
 			transition: $transition-regular;
 		}
 	}
+}
+.test {
 }

@@ -11,6 +11,8 @@ var selectMenu = {
   }
 };
 
+selectMenu.buildMenu();
+
 // Function to add/remove class with duration
 (function($){
   $.fn.extend({ 
@@ -25,8 +27,6 @@ var selectMenu = {
   }
 });
 })(jQuery);  
-
-selectMenu.buildMenu();
           
 // HTML injection based on AJAX call and selection
 var dynamicCategory = function(data){
